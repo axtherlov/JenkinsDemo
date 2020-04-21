@@ -2,7 +2,7 @@ properties([[$class: 'jenkins.model.BuildDiscarderProperty', strategy: [$class: 
 
 def pulseNotifications = 'https://corelogic-project-monitor-production.cfapps.io/projects/70698193-1b36-4c6e-9b84-ca02ef1a9a0b/status'
 
-node() {
+node {
     try {
         withEnv(['JAVA_HOME=/opt/oracle/java/jdk-11.0.3']) {
             sh 'env | sort'
