@@ -8,7 +8,7 @@ node {
             sh 'env | sort'
             sh 'export JAVA_HOME=/opt/oracle/java/jdk-11.0.3'
             sh '$JAVA_HOME/bin/java -version'
-            sh "/usr/bin/google-chrome --version"
+            //sh "/usr/bin/google-chrome --version"
 
             stage('Running Regression Tests') {
                 ansiColor('xterm') {
